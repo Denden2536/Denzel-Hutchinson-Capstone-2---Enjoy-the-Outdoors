@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        background-image: url("deep-voyage-stunning-anime-landscape.jpeg");
+        background-size: cover; 
+        background-position: center;
+        background-repeat: no-repeat; 
+        background-attachment: fixed; 
+      }
+    </style>
+
+    <style>
+      h1 {
+          color: black;
+      }
+  </style>
+  <style>
+    h3 {
+        color: black; 
+    }
+</style>
+<style>
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url("deep-voyage-stunning-anime-landscape.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  main {
+    flex: 1; 
+  }
+
+  footer {
+    background-color: #eee6d3;
+    padding: 20px 0;
+  }
+</style>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html">National Parks</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="mountainInformation.html"
+                >Mountain Info</a
+              >
+              <a class="nav-link" href="nationalParks.html"
+                >National Park Search</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+      </nav>
+    </header>
+    <main class="mt-5">
+      <div class="container mb-5">
+        <h1>Select Option</h1>
+        <input
+          type="radio"
+          id="stateRadio"
+          name="option"
+          data-toggle="dropdown"
+          checked
+        />
+        <label for="stateRadio">State</label>
+        <input
+          type="radio"
+          id="parkTypeRadio"
+          name="option"
+          data-toggle="dropdown"
+        />
+        <label for="parkTypeRadio">Park Type</label>
+      </div>
+
+      <div class="container mb-5" id="stateDropdown">
+        <h3>Select State</h>
+        <select
+          name=""
+          id="stateList"
+          class="form-select"
+          aria-label="Default select example"
+        >
+          <option value="">State</option>
+        </select>
+
+      </div>
+      
+
+      <div class="container mb-5" id="parkTypeDropdown">
+      <h3>Select Park Type</h3>
+        <select
+          name=""
+          id="parkTypeList"
+          class="form-select"
+          aria-label="Default select example"
+        >
+          <option value="">Park Type</option>
+        </select>
+        </div>
+        <table class="table table-striped" id="parkInfoTable">
+          <thead>
+            <tr>
+              <th>Park Name</th>
+              <th>Address</th>
+              <th>City</th>
+              <th>State</th>
+              <th>Zip Code</th>
+              <th>Phone Number</th>
+            </tr>
+          </thead>
+          <tbody id="parksTableBody"></tbody>
+        </table>
+    </main>
+  <footer class="bg-dark text-center text-white">
+ 
+    <div class="container p-4 pb-0">
+       
+        <section class="">
+            <form action="">
+          
+                <div class="row d-flex justify-content-center">
+              
+                    <div class="col-auto">
+                        <p class="pt-2">
+                            <strong>Sign up for our newsletter</strong>
+                        </p>
+                    </div>
+                    
+                    <div class="col-md-5 col-12">
+                      
+                        <div class="form-outline form-white mb-4">
+                            <input type="email" id="form5Example2" class="form-control" />
+                            <label class="form-label" for="form5Example2">Email address</label>
+                        </div>
+                    </div>
+                    
+                    <div class="col-auto">
+                      
+                        <button type="submit" class="btn btn-outline-light mb-4">
+                            Subscribe
+                        </button>
+                    </div>
+                
+                </div>
+         
+            </form>
+        </section>
+    </div>
+
+
+</footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="nationalParks.js"></script>
+    <script src="nationalParkData.js"></script>
+    <script src="locationData.js"></script>
+    <script src="parkTypeData.js"></script>
+  </body>
+</html>
